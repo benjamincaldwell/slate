@@ -72,8 +72,13 @@ body, select, input[type=text], input[type=time], input[type=date] {
   font-weight: normal;
 }
 
-select, input[type=time], input[type=date] {
+select {
   @include appearance(none);
+}
+input[type=time], input[type=date] {
+  opacity: 0;
+}
+select, input[type=time], input[type=date] {
   border: none;
   position: absolute;
   top: 13px;
